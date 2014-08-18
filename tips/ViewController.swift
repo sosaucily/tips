@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let tipPercentages = [0.18, 0.2, 0.22]
                             
     @IBOutlet weak var tipLabel: UILabel!
     
@@ -34,18 +35,18 @@ class ViewController: UIViewController {
 
 
     @IBAction func onEditingChanged(sender: AnyObject) {
-        var tipPercentages = [0.18, 0.2, 0.22]
+        var bill = evaluateBill(billField.text)
         
-        //Funky hack b/c swift does not support converting string to double
-        var billAmount = (billField.text as NSString).doubleValue
+        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
-        var tipAmount = billAmount * tipPercentages[tipControl.selectedSegmentIndex]
+        var tip = calculateTip(bill, tipPercentage)
         
-        var total = billAmount + tipAmount
+        var total = calculateTotal(bill, tip)
         
-        tipLabel.text = String(format: "$%.2f", tipAmount)
+        tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
     }
+
     
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)

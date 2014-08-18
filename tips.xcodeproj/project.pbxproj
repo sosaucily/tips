@@ -12,6 +12,9 @@
 		1CE0618919A1A7170075B898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0618719A1A7170075B898 /* Main.storyboard */; };
 		1CE0618B19A1A7170075B898 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0618A19A1A7170075B898 /* Images.xcassets */; };
 		1CE0619719A1A7170075B898 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0619619A1A7170075B898 /* tipsTests.swift */; };
+		1CF5216F19A1D28D00C26518 /* TipsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5216E19A1D28D00C26518 /* TipsHelpers.swift */; };
+		1CF5217019A1D2A000C26518 /* TipsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5216E19A1D28D00C26518 /* TipsHelpers.swift */; };
+		1CF5217319A1D5E600C26518 /* tipsHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5217219A1D5E600C26518 /* tipsHelpersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 		1CE0619019A1A7170075B898 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE0619519A1A7170075B898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CE0619619A1A7170075B898 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		1CF5216E19A1D28D00C26518 /* TipsHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsHelpers.swift; sourceTree = "<group>"; };
+		1CF5217219A1D5E600C26518 /* tipsHelpersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tipsHelpersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		1CE0618019A1A7170075B898 /* tips */ = {
 			isa = PBXGroup;
 			children = (
+				1CF5216E19A1D28D00C26518 /* TipsHelpers.swift */,
 				1CE0618319A1A7170075B898 /* AppDelegate.swift */,
 				1CE0618519A1A7170075B898 /* ViewController.swift */,
 				1CE0618719A1A7170075B898 /* Main.storyboard */,
@@ -96,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				1CE0619619A1A7170075B898 /* tipsTests.swift */,
+				1CF5217219A1D5E600C26518 /* tipsHelpersTests.swift */,
 				1CE0619419A1A7170075B898 /* Supporting Files */,
 			);
 			path = tipsTests;
@@ -210,6 +217,7 @@
 			files = (
 				1CE0618619A1A7170075B898 /* ViewController.swift in Sources */,
 				1CE0618419A1A7170075B898 /* AppDelegate.swift in Sources */,
+				1CF5216F19A1D28D00C26518 /* TipsHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE0619719A1A7170075B898 /* tipsTests.swift in Sources */,
+				1CF5217319A1D5E600C26518 /* tipsHelpersTests.swift in Sources */,
+				1CF5217019A1D2A000C26518 /* TipsHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +405,7 @@
 				1CE0619C19A1A7170075B898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CE0619D19A1A7170075B898 /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +414,7 @@
 				1CE0619F19A1A7170075B898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
