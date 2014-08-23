@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C88376A19A376DB00F5A05E /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88376919A376DB00F5A05E /* SettingsController.swift */; };
 		1CE0618419A1A7170075B898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0618319A1A7170075B898 /* AppDelegate.swift */; };
 		1CE0618619A1A7170075B898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0618519A1A7170075B898 /* ViewController.swift */; };
 		1CE0618919A1A7170075B898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0618719A1A7170075B898 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C88376919A376DB00F5A05E /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		1CE0617E19A1A7170075B898 /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE0618219A1A7170075B898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CE0618319A1A7170075B898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +82,9 @@
 		1CE0618019A1A7170075B898 /* tips */ = {
 			isa = PBXGroup;
 			children = (
-				1CF5216E19A1D28D00C26518 /* TipsHelpers.swift */,
 				1CE0618319A1A7170075B898 /* AppDelegate.swift */,
+				1C88376919A376DB00F5A05E /* SettingsController.swift */,
+				1CF5216E19A1D28D00C26518 /* TipsHelpers.swift */,
 				1CE0618519A1A7170075B898 /* ViewController.swift */,
 				1CE0618719A1A7170075B898 /* Main.storyboard */,
 				1CE0618A19A1A7170075B898 /* Images.xcassets */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C88376A19A376DB00F5A05E /* SettingsController.swift in Sources */,
 				1CE0618619A1A7170075B898 /* ViewController.swift in Sources */,
 				1CE0618419A1A7170075B898 /* AppDelegate.swift in Sources */,
 				1CF5216F19A1D28D00C26518 /* TipsHelpers.swift in Sources */,

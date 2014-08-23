@@ -19,13 +19,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    @IBOutlet weak var settingsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        tipLabel.text = "$0.00"
-        totalLabel.text = "$0.00"
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,9 +31,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
     @IBAction func onEditingChanged(sender: AnyObject) {
-        var bill = evaluateBill(billField.text)
+        var billString = billField.text
+        
+        if billString.hasPrefix("$") {
+            billString = stripFirstChar(billString)
+        }
+        var bill = evaluateBill(billString)
         
         var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
@@ -45,6 +47,8 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
+        billField.text = "$\(billString)"
     }
 
     
