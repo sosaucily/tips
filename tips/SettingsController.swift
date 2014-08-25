@@ -49,9 +49,9 @@ class SettingsController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        NSUserDefaults.standardUserDefaults().setObject(indexPath.row as Int, forKey:"defaulttip")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        var defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setInteger(indexPath.row as Int, forKey:"defaulttipindex")
+        defaults.synchronize()
         
-        println("You selected cell \(indexPath.row)")
     }
 }

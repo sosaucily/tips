@@ -24,12 +24,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        var defaultTip = NSUserDefaults.standardUserDefaults().objectForKey("defaulttip") as Int?
-        if defaultTip == nil {
-            defaultTip = 1
-        }
-        tipControl.selectedSegmentIndex = defaultTip!
+        var defaultTip = NSUserDefaults.standardUserDefaults().integerForKey("defaulttipindex")
+        tipControl.selectedSegmentIndex = defaultTip
     }
 
     override func didReceiveMemoryWarning() {
